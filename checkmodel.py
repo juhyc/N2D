@@ -47,5 +47,5 @@ print('모델출력')
 #         param.requires_grad = False
 
 # 파이토치 버전 확인
-import torch
-print(torch.__version__)
+# import torch
+# print(torch.__version__)
