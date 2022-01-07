@@ -83,7 +83,7 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
     
     기존 모델에서 채택한 32크기의 feature map이 아닌 다양한 크기의 feature map으로 변경하여 학습을 진행하였고, 최종적으로 64크기의 feature map을 선택하여 학습을 진행하였습니다.
     
-    이외에도 1)학습을 진행할 층 변경, 2)batch size 변경, 3)dataset 구성 변경등 다양한 환경 변화를 주며 hyperparameter tuning을 진행하였습니다.
+    이외에도 학습을 진행할 층 변경, batch size 변경, dataset 구성 변경등 다양한 환경 변화를 주며 hyperparameter tuning을 진행하였습니다.
     
     |Input|기존 model|7층 layer 학습|6,7층 layer 학습|
     |:---|:---:|---:|---:|
