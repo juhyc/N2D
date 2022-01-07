@@ -62,7 +62,7 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
   
     <img src = "https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png" width = "50%" height = "50%">
   
-
+    (모델 관련 논문 링크: https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Zero-Reference_Deep_Curve_Estimation_for_Low-Light_Image_Enhancement_CVPR_2020_paper.pdf)
 
 4. **모델 선택 이유**
     
@@ -77,17 +77,17 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
 
     <img src = "https://user-images.githubusercontent.com/42459518/148532204-2d9d4eda-9ece-4c5a-9ca6-6c6d4a7ad890.png" width = "40%" height = "40%">
     
-    전체 파라미터에서 약 20% 차지하는 마지막 층을 제외하고 freeze시킨후 마지막 층만 학습을 시키는 fine-tuning을 진행하였습니다.
+    전체 파라미터에서 약 20% 차지하는 마지막 층을 제외한 나머지 층을 freeze시킨후 마지막 층만 학습을 시키는 fine-tuning을 진행하였습니다.
     
-    기존 모델은 32크기의 feature map을 이용하였는데, 차량이미지에 파손부위는 전체이미지 중 detail에 들어간다고 판단하여
+    저조도 사진이 모델에 의해 조도 개선이 된 후에는 사진의 미세한 영역들이 뭉게지거나 디테일이 훼손되는 경우가 있는데, 차량이미지 조도 개선 시 파손영역의 디테일이 훼손된다면 문제가 된다고 판단하여
     
-    64크기의 feature map으로 변경하여 학습을 진행하였습니다.
+    기존 모델에서 채택한 32크기의 feature map이 아닌 다양한 크기의 feature map으로 변경하여 학습을 진행하였고, 최종적으로 64크기의 feature map을 선택하여 학습을 진행하였습니다.
     
-    학습을 진행할 층 변경, batch size 변경, feature map size 변경, dataset 구성 변경등 hyperparameter tuning을 진행하였습니다.
+    이외에도 1)학습을 진행할 층 변경, 2)batch size 변경, 3)dataset 구성 변경등 다양한 환경 변화를 주며 hyperparameter tuning을 진행하였습니다.
     
-    최종적으로 모델 반환 결과 detail을 많이 포함하는
+    최종적으로, 학습시간 및 이미지처리 시간이 적게 걸리는 장점을 유지하며 조도 개선 후에도 사진의 디테일 훼손이 적은 최적의 모델의 파라미터를 설정하였습니다.
     
-    (4000장의 다양한 노출 이미지, batch size : 16, feature map: 64, epoch : 100) 최종 모델의 파라미터를 설정하였습니다.
+        최종 학습 환경 : (4000장의 다양한 노출 이미지, batch size : 16, feature map: 64, epoch : 100) 
     
     
 
