@@ -75,7 +75,7 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
 
 5. **학습**
 
-    <img src = "https://user-images.githubusercontent.com/42459518/148532204-2d9d4eda-9ece-4c5a-9ca6-6c6d4a7ad890.png" width = "50%" height = "50%">
+    <img src = "https://user-images.githubusercontent.com/42459518/148532204-2d9d4eda-9ece-4c5a-9ca6-6c6d4a7ad890.png" width = "40%" height = "40%">
     
     전체 파라미터에서 약 20% 차지하는 마지막 층을 제외하고 freeze시킨후 마지막 층만 학습을 시키는 fine-tuning을 진행하였습니다.
     
