@@ -58,17 +58,18 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
 3. **모델 선택**
 
 
-  다음과 같은 구조를 가지는 DCE-net 모델을 사용하였습니다.
+    다음과 같은 구조를 가지는 DCE-net 모델을 사용하였습니다.
   
-  <img src = "https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png" width = "50%" height = "50%">
+    <img src = "https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png" width = "50%" height = "50%">
   
 
 
 4. **모델 선택 이유**
     
     
-    1. paired and unpaired 상관없는 training data 사용가능.
-    2. 학습시간과 이미지처리 시간이 적게 걸림. (대략 장당 0.001~0.003초)
+        1. paired and unpaired 상관없는 training data 사용가능.
+
+        2. 학습시간과 이미지처리 시간이 적게 걸림. (대략 장당 0.001~0.003초)
     
 
 
