@@ -45,13 +45,15 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
     2. 파손 부위가 잘 보이는 사진
     3. 화질이 너무 낮지 않은 사진
   을 기준으로 400개의 이미지를 준비하였습니다.
+  
+  다양한 밝기에 노출된 이미지를 위해 400개의 이미지에 각각 10번의 transform을 적용하여 총 4000장의 이미지를 이용하였습니다.
 
 
 3. **모델 선택**
 
 
   다음과 같은 구조를 가지는 DCE-net 모델을 사용하였습니다.
-  ![image](https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png)
+  <img src = "https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png" width = "50%" height = "50%">
   
 
 4. **모델 선택 이유**
@@ -67,9 +69,17 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
     <img src = "https://user-images.githubusercontent.com/42459518/148532204-2d9d4eda-9ece-4c5a-9ca6-6c6d4a7ad890.png" width = "50%" height = "50%">
     
     전체 파라미터에서 약 20% 차지하는 마지막 층을 제외하고 freeze시킨후 마지막 층만 학습을 시키는 fine-tuning을 진행하였습니다.
-
-
-
+    
+    기존 모델은 32크기의 feature map을 이용하였는데, 차량이미지에 파손부위는 전체이미지 중 detail에 들어간다고 판단하여
+    
+    64크기의 feature map으로 변경하여 학습을 진행하였습니다.
+    
+    학습을 진행할 층 변경, batch size 변경, feature map size 변경, dataset 구성 변경등 hyperparameter tuning을 진행하였습니다.
+    
+    최종적으로 모델 반환 결과 detail을 많이 포함하는
+    
+    (4000장의 다양한 노출 이미지, batch size : 16, feature map: 64, epoch : 100) 최종 모델의 파라미터를 설정하였습니다.
+    
     
 
 5. **결과**
