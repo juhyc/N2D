@@ -89,9 +89,10 @@ ZERO_DCE 모델을 이용한 쏘카 input 저조도차량파손사진 개선모�
     |:---|:---:|---:|---:|
     |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565083-10d8d67e-10cc-41bb-be5b-f8c76d49d206.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565118-da48808c-5af6-4b16-8cbb-7f4886cd1e70.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566627-b47f7d6f-f5d5-4afc-a4b2-073ee389e535.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565177-e34d8927-00ba-49f5-a2c5-995833d591ce.jpeg)
     |1000 image + 8batch + 32feature map|2000 image + 8batch + 32feature map|2000 image + 16batch + 32featuremap|4000 image + 16batch + 64feature map|
-    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566082-e52004da-3ee3-42b7-acbb-94a6de2336b6.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566116-e1ecc922-4535-4ebe-b2df-a291318940ad.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566148-e53bf6c6-df24-4c2b-87d7-427b5721f877.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566167-210fadf1-bd00-42ba-98d4-bedeb433fd01.jpeg)|
+    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566082-e52004da-3ee3-42b7-acbb-94a6de2336b6.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566116-e1ecc922-4535-4ebe-b2df-a291318940ad.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566148-e53bf6c6-df24-4c2b-87d7-427b5721f877.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566167-210fadf1-bd00-42ba-98d4-bedeb433fd01.jpeg)
+|
 
-    
+
 
     
     최종적으로, 학습시간 및 이미지처리 시간이 적게 걸리는 장점을 유지하며 조도 개선 후에도 사진의 디테일 훼손이 적은 최적의 모델의 파라미터를 설정하였습니다.
