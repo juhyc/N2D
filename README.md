@@ -85,11 +85,12 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     
     이외에도 학습을 진행할 층 변경, batch size 변경, dataset 구성 변경등 다양한 환경 변화를 주며 hyperparameter tuning을 진행하였습니다.
     
-    |Input|기존 model|7층 layer 학습|6,7층 layer 학습|
-    |:---|:---:|---:|---:|
-    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565083-10d8d67e-10cc-41bb-be5b-f8c76d49d206.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565118-da48808c-5af6-4b16-8cbb-7f4886cd1e70.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566627-b47f7d6f-f5d5-4afc-a4b2-073ee389e535.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148565177-e34d8927-00ba-49f5-a2c5-995833d591ce.jpeg)
-    |1000 image + 8batch + 32feature map|2000 image + 8batch + 32feature map|2000 image + 16batch + 32featuremap|4000 image + 16batch + 64feature map|
-    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566082-e52004da-3ee3-42b7-acbb-94a6de2336b6.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566116-e1ecc922-4535-4ebe-b2df-a291318940ad.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566148-e53bf6c6-df24-4c2b-87d7-427b5721f877.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148566167-210fadf1-bd00-42ba-98d4-bedeb433fd01.jpeg)
+    |Input|3000img + 8batch + 32f|3000img + 16batch + 32f|
+    |:---|:---:|---:|
+    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633348-106ba036-d475-4713-be96-cde112d9d8e9.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633357-65777671-c569-47c6-846c-c2238bc63620.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633369-89ec5535-8b72-4dba-84a2-8cac0e6fefca.jpeg)|
+    |4000img + 16batch + 64f|2000img + 16batch + 32f|2000img + 8batch + 32f|
+    |![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633448-968f0b51-504a-4dd0-a92b-7ff34ce5b403.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633454-cc99664d-1992-4497-a2b8-c5e62fc14b29.jpeg)|![20190220_323201550590495119](https://user-images.githubusercontent.com/42459518/148633458-b65b2e80-5f65-4cfc-be8e-a148f630034e.jpeg)
+|
 
 
 
