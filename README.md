@@ -103,6 +103,9 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
         
         - KinD(Kindling the darkness) : tensorflow 기반, DCE-net 와 비교해 정확도 낮음.
 
+
+        - TBEFN(A Two-Branch Exposure-Fusion Network) : 추가적인 데이터 튜닝 필요
+
 5. **학습**
 
     <img src = "https://user-images.githubusercontent.com/42459518/148532204-2d9d4eda-9ece-4c5a-9ca6-6c6d4a7ad890.png" width = "40%" height = "40%">
