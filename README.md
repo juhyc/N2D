@@ -92,10 +92,10 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     - 다른 모델들과 비교
 
 
-        DSLR(Deep stacked laplacian restorer for low-light image enhancement) : DCE-net 와 비교해 정보가 적고 코드들이 복잡. 헤당 모델의 중요한 개념인 Laplacian Pyramid의 어려움.
+        - DSLR(Deep stacked laplacian restorer for low-light image enhancement) : DCE-net 와 비교해 정보가 적고 코드들이 복잡. 헤당 모델의 중요한 개념인 Laplacian Pyramid의 어려움.
         
         
-        KinD(Kindling the darkness) : tensorflow 기반, DCE-net 와 비교해 정확도 낮음.
+        - KinD(Kindling the darkness) : tensorflow 기반, DCE-net 와 비교해 정확도 낮음.
 
 5. **학습**
 
