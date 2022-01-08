@@ -195,11 +195,11 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     |:---:|:---:|:---:|:---:|
     |![수정됨_KakaoTalk_20220105_191453479 (8)](https://user-images.githubusercontent.com/42459518/148639279-111c8704-0be7-4cef-b0ac-f1ef9198b5e3.jpg)|![수정됨_KakaoTalk_20220105_191453479 (8)](https://user-images.githubusercontent.com/42459518/148639305-8b31b468-9a82-4e29-95e7-620b92bbed33.jpg)|![수정됨_IMG_4567](https://user-images.githubusercontent.com/42459518/148639594-4203750d-7888-4c26-8d00-9a6ceee62e48.jpg)|![수정됨_IMG_4567](https://user-images.githubusercontent.com/42459518/148639408-ff21accd-4966-4dfc-9db1-1af3fa5340f1.jpg)|
     
-    조도 개선을 통해 보이지 않았던 형체들이 검출되나, detail한 파악이 아쉬운 모습을 보입니다.
+    조도 개선을 통해 보이지 않았던 형체들이 검출되나, detail한 파악이 아쉬운 모습을 보였습니다.
     
     입력으로 주어진 이미지 안의 객체 위치와 객체의 종류를 파악하는 Obeject Detection에는 유용할것으로 보입니다.
     
-    보정 전후 픽셀의 변화가 생기기 때문에 픽셀을 대상으로 한 Classification문제인 Segmentation문제에서는 아쉬운 결과를 보입니다.
+    보정 전후 픽셀의 변화가 생기기 때문에 픽셀을 대상으로 한 Classification문제인 Segmentation문제에서는 아쉬운 결과를 보였습니다.
     
     
 --------------------------------------------------------------------------
