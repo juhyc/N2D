@@ -81,7 +81,7 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     
     위 모델은 Unsupervised Learning의 일종인 Non-Reference loss function을 이용합니다.
     
-    image에 대한 color constancy loss, exposure control loss, spatial consistency loss, illumination smoothness loss loss function으로 사용합니다.
+    image에 대한 color constancy loss, exposure control loss, spatial consistency loss, illumination smoothness loss를 loss function으로 사용합니다.
     
     위 loss function으로 image enhancement quality를 측정하고 network를 학습하는 구조입니다.
   
