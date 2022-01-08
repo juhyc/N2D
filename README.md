@@ -78,6 +78,12 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     다음과 같은 구조를 가지는 DCE-net 모델을 사용하였습니다.
   
     <img src = "https://user-images.githubusercontent.com/42459518/148529377-607d4845-8399-4b54-8c89-a3fefb741170.png" width = "50%" height = "50%">
+    
+    위 모델은 Unsupervised Learning의 일종인 Non-Reference loss function을 이용합니다.
+    
+    image에 대한 color constancy loss, exposure control loss, spatial consistency loss, illumination smoothness loss loss function으로 사용합니다.
+    
+    위 loss function으로 image enhancement quality를 측정하고 network를 학습하는 구조입니다.
   
     (모델 관련 논문 링크: https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Zero-Reference_Deep_Curve_Estimation_for_Low-Light_Image_Enhancement_CVPR_2020_paper.pdf)
 
