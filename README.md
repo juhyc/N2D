@@ -15,7 +15,7 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
 ## 🤽‍♂️팀 소개
 
 |Name|최주형|김두진|심영현|이태성|
-|:---|:---:|---:|---:|---:|
+|:---:|:---:|:---:|:---:|:---:|
 |Profile|![주형님](https://user-images.githubusercontent.com/66891085/148636745-b78824b7-8f35-4223-a134-6cefb71086f5.jpg)|![두진님 (1)](https://user-images.githubusercontent.com/66891085/148635331-a636e9ac-1f00-4998-a362-2108163b17a7.png)|-|![KakaoTalk_20220106_172658148 (1)](https://user-images.githubusercontent.com/66891085/148471052-1291b84f-eca6-4bd6-a8d6-c15772050d3d.jpg)|
 |Git|@rmakerch37|@doojin|3|@2taesung|
 
