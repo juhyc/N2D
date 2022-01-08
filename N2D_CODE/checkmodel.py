@@ -22,7 +22,7 @@ from torchsummary import summary
 
 # DCE_net.load_state_dict(torch.load('snapshots\Epoch99.pth'))
 
-print('모델출력')
+# print('모델출력')
 # print(DCE_net)
 
 # 사진 데이터 크기 확인
@@ -49,3 +49,20 @@ print('모델출력')
 # 파이토치 버전 확인
 # import torch
 # print(torch.__version__)
+
+# image 해상도 확인
+# from PIL import Image
+
+# def get_num_pixels(filepath):
+#     width, height = Image.open(filepath).size
+#     return width, height, width*height
+
+# print(get_num_pixels("data/train_data/53.jpg"))
+
+# Image.open('data/test_data/SOCAR/20190811_483391565449418702.jpeg')
+
+# gpu 사용량 초기화
+import gc
+gc.collect()
+torch.cuda.empty_cache()
+print("사용량 초기화")

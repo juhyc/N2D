@@ -15,7 +15,6 @@ from PIL import Image
 import glob
 import time
 
-
  
 def lowlight(image_path):
 	os.environ['CUDA_VISIBLE_DEVICES']='0'
@@ -30,7 +29,8 @@ def lowlight(image_path):
 	DCE_net = model.enhance_net_nopool().cuda()
 	
 	# DCE_net.load_state_dict(torch.load('snapshots/Epoch99.pth'))
-	DCE_net.load_state_dict(torch.load('snapshots/NewEpoch99.pth'))
+	
+	DCE_net.load_state_dict(torch.load('N2D_CODE/snapshots/NewEpoch99.pth'))
 	start = time.time()
 	_,enhanced_image,_ = DCE_net(data_lowlight)
 
