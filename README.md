@@ -114,7 +114,41 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
     
     1. 의도적으로 밝기를 낮춘 image에 대해 조도개선
     
-       (두진님 작성)
+       ![image](https://user-images.githubusercontent.com/97295719/148641027-f7ac3508-0388-48eb-b4b5-5df6e4af26fd.png)
+       
+       PyTorch의 Transform 기능을 사용하여 밝기를 어둡게 조정한 이미지에 대해 조도 개선을 진행하였습니다. 
+       
+       어두워서 육안으로 파손부위 식별이 잘 되지 않던 이미지가, 파손부위 식별이 용이한 이미지가 되었습니다.
+       
+       
+       ![image](https://user-images.githubusercontent.com/97295719/148641171-50546bc0-188b-43ac-958b-4f16a8fc52ee.png)
+       
+       개선 전/후 이미지에 대해 Segmentation을 진행한 결과입니다.
+       
+       개선 전에 비해 개선 후 이미지가 조금 더 넓은 부분을 인식하는 결과를 보여줍니다.
+       
+       또한, 개선 전 이미지의 경우 손잡이 부분을 파손 부위로 인식하는 오류를 보였으나, 개선 후 이미지에서는 이와 같은 오류가 개선되었습니다.
+       
+       
+       
+       다른 사진으로 test를 진행한 결과입니다.
+       
+       ![image](https://user-images.githubusercontent.com/97295719/148641358-66b8cd39-1ee4-4b02-9f10-c7c147c4cc84.png)
+       
+       위 이미지의 경우 개선 후에 이미지가 밝아지긴 했으나 육안으로 파손부위를 잡아내는것은 여전히 쉽지 않습니다.
+       
+       ![image](https://user-images.githubusercontent.com/97295719/148641363-4c06f78c-090a-435f-a513-6a6acabcbb15.png)
+       
+       개선 전/후 이미지에 대해 Segmentation을 진행한 결과입니다.
+       
+       개선 후 파손 범위 검출 능력이 매우 향상되는 것을 확인할 수 있습니다.
+       
+       ![image](https://user-images.githubusercontent.com/97295719/148641368-588fc8d7-0f13-4efe-bff1-506ffe06cf3e.png)
+       
+       제공된 Mask 이미지와 함께 확인하면 성능 향상을 더 체감할 수 있습니다.
+
+
+
        
     2. SOCAR 제공 image에 대해 조도개선
      
