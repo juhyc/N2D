@@ -35,7 +35,7 @@ ZERO_DCE 모델을 이용한  저조도차량파손사진 개선모델
 
     그 중 어두운 곳에서 촬영된 차량 이미지 입력시 모델의 정확도가 떨어지는 문제가 발생했습니다.
     
-    ![조도](https://user-images.githubusercontent.com/66891085/148636018-d1a74d6d-0133-4e02-97b8-73a636ff69d8.JPG)
+    ![조도3](https://user-images.githubusercontent.com/66891085/148645333-22b89d3a-0076-4fc7-9470-0e5ec9dd1aae.jpg)
     (출처 : 쏘카 기술 블로그)
     
     
